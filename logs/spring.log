@@ -145,3 +145,84 @@
 2022-07-03 15:30:45.447  INFO 4192 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 2022-07-03 15:30:45.464  INFO 4192 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
 2022-07-03 15:30:45.573  INFO 4192 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.502 seconds (JVM running for 3.185)
+2022-07-03 16:03:16.259  INFO 20956 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 20956 (D:\javaproject\test2\target\classes started by Arthur in D:\javaproject\test2)
+2022-07-03 16:03:16.261 DEBUG 20956 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-03 16:03:16.262  INFO 20956 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-03 16:03:17.428  INFO 20956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-03 16:03:17.436  INFO 20956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-03 16:03:17.436  INFO 20956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-03 16:03:17.513  INFO 20956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-03 16:03:17.513  INFO 20956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1206 ms
+2022-07-03 16:03:18.170  INFO 20956 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-03 16:03:18.238  INFO 20956 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-03 16:03:18.404  INFO 20956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-03 16:03:18.405  INFO 20956 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-03 16:03:18.409  INFO 20956 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-03 16:03:18.430  INFO 20956 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-03 16:03:18.581  INFO 20956 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.654 seconds (JVM running for 4.206)
+2022-07-03 16:03:36.939  INFO 20956 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-03 16:03:36.939  INFO 20956 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-03 16:03:36.946  INFO 20956 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-03 16:04:03.392  INFO 20956 --- [http-nio-9002-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-03 16:04:03.549  INFO 20956 --- [http-nio-9002-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-03 16:04:03.558 DEBUG 20956 --- [http-nio-9002-exec-2] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ? AND password = ?) 
+2022-07-03 16:04:03.577 DEBUG 20956 --- [http-nio-9002-exec-2] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: 1(String), 1(String)
+2022-07-03 16:04:03.598 DEBUG 20956 --- [http-nio-9002-exec-2] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 1
+2022-07-03 16:04:16.354 DEBUG 20956 --- [http-nio-9002-exec-6] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ? AND password = ?) 
+2022-07-03 16:04:16.355 DEBUG 20956 --- [http-nio-9002-exec-6] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: a(String), a(String)
+2022-07-03 16:04:16.356 DEBUG 20956 --- [http-nio-9002-exec-6] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 1
+2022-07-03 16:04:59.794  INFO 20956 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-03 16:04:59.796  INFO 20956 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-03 16:04:59.802  INFO 20956 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-03 16:05:03.437  INFO 10084 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 10084 (D:\javaproject\test2\target\classes started by Arthur in D:\javaproject\test2)
+2022-07-03 16:05:03.439 DEBUG 10084 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-03 16:05:03.440  INFO 10084 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-03 16:05:04.553  INFO 10084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-03 16:05:04.561  INFO 10084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-03 16:05:04.561  INFO 10084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-03 16:05:04.638  INFO 10084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-03 16:05:04.638  INFO 10084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1152 ms
+2022-07-03 16:05:05.313  INFO 10084 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-03 16:05:05.381  INFO 10084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-03 16:05:05.551  INFO 10084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-03 16:05:05.552  INFO 10084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-03 16:05:05.556  INFO 10084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-03 16:05:05.576  INFO 10084 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-03 16:05:05.723  INFO 10084 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.687 seconds (JVM running for 3.514)
+2022-07-03 16:05:13.759  INFO 10084 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-03 16:05:13.760  INFO 10084 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-03 16:05:13.775  INFO 10084 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2022-07-03 16:05:37.274  INFO 10084 --- [http-nio-9002-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-03 16:05:37.921  INFO 10084 --- [http-nio-9002-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-03 16:05:37.976 DEBUG 10084 --- [http-nio-9002-exec-5] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ? AND password = ?) 
+2022-07-03 16:05:38.170 DEBUG 10084 --- [http-nio-9002-exec-5] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: a(String), a(String)
+2022-07-03 16:05:38.337 DEBUG 10084 --- [http-nio-9002-exec-5] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 1
+2022-07-03 16:06:08.834  INFO 10084 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-03 16:06:08.836  INFO 10084 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-03 16:06:08.842  INFO 10084 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-03 16:11:57.059  INFO 12716 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 12716 (D:\javaproject\test2\target\classes started by Arthur in D:\javaproject\test2)
+2022-07-03 16:11:57.061 DEBUG 12716 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-03 16:11:57.062  INFO 12716 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-03 16:11:58.074  INFO 12716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-03 16:11:58.081  INFO 12716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-03 16:11:58.082  INFO 12716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-03 16:11:58.153  INFO 12716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-03 16:11:58.153  INFO 12716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1039 ms
+2022-07-03 16:11:58.795  INFO 12716 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-03 16:11:58.865  INFO 12716 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-03 16:11:59.043  INFO 12716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-03 16:11:59.044  INFO 12716 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-03 16:11:59.047  INFO 12716 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-03 16:11:59.067  INFO 12716 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-03 16:11:59.210  INFO 12716 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.495 seconds (JVM running for 3.211)
+2022-07-03 16:12:04.258  INFO 12716 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-03 16:12:04.259  INFO 12716 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-03 16:12:04.265  INFO 12716 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-03 16:12:30.759  INFO 12716 --- [http-nio-9002-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-03 16:12:31.410  INFO 12716 --- [http-nio-9002-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-03 16:12:31.467 DEBUG 12716 --- [http-nio-9002-exec-5] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ? AND password = ?) 
+2022-07-03 16:12:31.658 DEBUG 12716 --- [http-nio-9002-exec-5] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: a(String), a(String)
+2022-07-03 16:12:31.825 DEBUG 12716 --- [http-nio-9002-exec-5] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 1
+2022-07-03 16:42:03.241  INFO 12716 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-03 16:42:03.243  INFO 12716 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-03 16:42:03.245  INFO 12716 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

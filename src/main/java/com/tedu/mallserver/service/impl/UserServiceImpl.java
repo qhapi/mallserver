@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.tedu.mallserver.mapper.UserMapper;
 import com.tedu.mallserver.pojo.UserDAO;
 import com.tedu.mallserver.pojo.UserDTO;
+import com.tedu.mallserver.pojo.UserVO;
 import com.tedu.mallserver.service.UserService;
 import org.apache.catalina.User;
 import org.apache.ibatis.jdbc.Null;
@@ -26,10 +27,21 @@ public class UserServiceImpl implements UserService {
 
         UserDAO userDAO = userMapper.selectOne(queryWrapper);
 
-        if(userDAO != null){
+        if(userDAO != null)
             return userDAO.getId();
-        }
-
         return -1;
+    }
+
+    @Override
+    public UserVO getUserInfo(Integer id) {
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("id",id);
+        UserDAO userDAO = userMapper.selectOne(queryWrapper);
+
+        UserVO userVO = new UserVO();
+        userVO.setId(id);
+        userVO.setCity(userDAO.getCity());
+        userVO.setName(userDAO.getName());
+        return userVO;
     }
 }
