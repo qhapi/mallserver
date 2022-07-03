@@ -1,0 +1,132 @@
+2022-07-03 08:48:23.148  INFO 2636 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 2636 (D:\javaproject\mallserver\target\classes started by Arthur in D:\javaproject\mallserver)
+2022-07-03 08:48:23.159 DEBUG 2636 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-03 08:48:23.160  INFO 2636 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-03 08:48:24.288  INFO 2636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-03 08:48:24.300  INFO 2636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-03 08:48:24.301  INFO 2636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-03 08:48:24.385  INFO 2636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-03 08:48:24.385  INFO 2636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1166 ms
+2022-07-03 08:48:25.019  INFO 2636 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-03 08:48:25.092  INFO 2636 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-03 08:48:25.276  INFO 2636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-03 08:48:25.277  INFO 2636 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-03 08:48:25.280  INFO 2636 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-03 08:48:25.297  INFO 2636 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-03 08:48:25.417  INFO 2636 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.74 seconds (JVM running for 3.639)
+2022-07-03 08:48:34.570  INFO 2636 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-03 08:48:34.570  INFO 2636 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-03 08:48:34.577  INFO 2636 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-03 08:52:47.954  INFO 2636 --- [http-nio-9002-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-03 08:52:48.113  INFO 2636 --- [http-nio-9002-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-03 08:52:48.122 DEBUG 2636 --- [http-nio-9002-exec-8] c.t.m.mapper.CategoryMapper.selectList   : ==>  Preparing: SELECT id,name FROM category 
+2022-07-03 08:52:48.140 DEBUG 2636 --- [http-nio-9002-exec-8] c.t.m.mapper.CategoryMapper.selectList   : ==> Parameters: 
+2022-07-03 08:52:48.158 DEBUG 2636 --- [http-nio-9002-exec-8] c.t.m.mapper.CategoryMapper.selectList   : <==      Total: 2
+2022-07-03 09:28:11.591  INFO 14120 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 14120 (D:\javaproject\mallserver\target\classes started by Arthur in D:\javaproject\mallserver)
+2022-07-03 09:28:11.592 DEBUG 14120 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-03 09:28:11.593  INFO 14120 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-03 09:28:12.836  INFO 14120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-03 09:28:12.844  INFO 14120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-03 09:28:12.844  INFO 14120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-03 09:28:12.930  INFO 14120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-03 09:28:12.930  INFO 14120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1274 ms
+2022-07-03 09:28:13.702  INFO 14120 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-03 09:28:13.783  INFO 14120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-03 09:28:14.029  INFO 14120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-03 09:28:14.030  INFO 14120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-03 09:28:14.034  INFO 14120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-03 09:28:14.059  INFO 14120 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-03 09:28:14.193  INFO 14120 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.953 seconds (JVM running for 4.765)
+2022-07-03 09:28:48.598  INFO 14120 --- [http-nio-9002-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-03 09:28:48.598  INFO 14120 --- [http-nio-9002-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-03 09:28:48.604  INFO 14120 --- [http-nio-9002-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-03 09:30:25.011  INFO 14120 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-03 11:06:02.710  INFO 3180 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 3180 (D:\javaproject\mallserver\target\classes started by Arthur in D:\javaproject\mallserver)
+2022-07-03 11:06:02.712 DEBUG 3180 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-03 11:06:02.713  INFO 3180 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-03 11:06:03.747  INFO 3180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-03 11:06:03.754  INFO 3180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-03 11:06:03.755  INFO 3180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-03 11:06:03.826  INFO 3180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-03 11:06:03.826  INFO 3180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1067 ms
+2022-07-03 11:06:04.373  INFO 3180 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-03 11:06:04.439  INFO 3180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-03 11:06:04.602  INFO 3180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-03 11:06:04.603  INFO 3180 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-03 11:06:04.606  INFO 3180 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-03 11:06:04.622  INFO 3180 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-03 11:06:04.741  INFO 3180 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.369 seconds (JVM running for 2.997)
+2022-07-03 11:07:47.864  INFO 9376 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 9376 (D:\javaproject\mallserver\target\classes started by Arthur in D:\javaproject\mallserver)
+2022-07-03 11:07:47.867 DEBUG 9376 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-03 11:07:47.868  INFO 9376 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-03 11:07:48.987  INFO 9376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-03 11:07:48.996  INFO 9376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-03 11:07:48.997  INFO 9376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-03 11:07:49.072  INFO 9376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-03 11:07:49.072  INFO 9376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2022-07-03 11:07:49.712  INFO 9376 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-03 11:07:49.780  INFO 9376 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-03 11:07:49.945  INFO 9376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-03 11:07:49.946  INFO 9376 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-03 11:07:49.949  INFO 9376 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-03 11:07:49.967  INFO 9376 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-03 11:07:50.091  INFO 9376 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.603 seconds (JVM running for 3.198)
+2022-07-03 11:08:23.247  INFO 9376 --- [http-nio-9002-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-03 11:08:23.248  INFO 9376 --- [http-nio-9002-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-03 11:08:23.256  INFO 9376 --- [http-nio-9002-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-07-03 11:08:23.325  INFO 9376 --- [http-nio-9002-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-03 11:08:23.435  INFO 9376 --- [http-nio-9002-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-03 11:08:23.441 DEBUG 9376 --- [http-nio-9002-exec-2] c.t.m.mapper.ItemMapper.selectList       : ==>  Preparing: SELECT id,category_id,name,price,image,item_desc FROM item WHERE (category_id = ?) 
+2022-07-03 11:08:23.461 DEBUG 9376 --- [http-nio-9002-exec-2] c.t.m.mapper.ItemMapper.selectList       : ==> Parameters: null
+2022-07-03 11:08:23.477 DEBUG 9376 --- [http-nio-9002-exec-2] c.t.m.mapper.ItemMapper.selectList       : <==      Total: 0
+2022-07-03 11:08:57.142  INFO 9376 --- [http-nio-9002-exec-3] org.apache.tomcat.util.http.Parameters   : Invalid chunk starting at byte [0] and ending at byte [13] with a value of [=categoryId=2] ignored
+ Note: further occurrences of Parameter errors will be logged at DEBUG level.
+2022-07-03 11:08:57.144 DEBUG 9376 --- [http-nio-9002-exec-3] c.t.m.mapper.ItemMapper.selectList       : ==>  Preparing: SELECT id,category_id,name,price,image,item_desc FROM item WHERE (category_id = ?) 
+2022-07-03 11:08:57.145 DEBUG 9376 --- [http-nio-9002-exec-3] c.t.m.mapper.ItemMapper.selectList       : ==> Parameters: null
+2022-07-03 11:08:57.146 DEBUG 9376 --- [http-nio-9002-exec-3] c.t.m.mapper.ItemMapper.selectList       : <==      Total: 0
+2022-07-03 11:09:16.966 DEBUG 9376 --- [http-nio-9002-exec-4] c.t.m.mapper.ItemMapper.selectList       : ==>  Preparing: SELECT id,category_id,name,price,image,item_desc FROM item WHERE (category_id = ?) 
+2022-07-03 11:09:16.967 DEBUG 9376 --- [http-nio-9002-exec-4] c.t.m.mapper.ItemMapper.selectList       : ==> Parameters: 2(Integer)
+2022-07-03 11:09:16.970 DEBUG 9376 --- [http-nio-9002-exec-4] c.t.m.mapper.ItemMapper.selectList       : <==      Total: 2
+2022-07-03 14:50:47.466  INFO 19316 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 19316 (D:\javaproject\mallserver\target\classes started by Arthur in D:\javaproject\mallserver)
+2022-07-03 14:50:47.468 DEBUG 19316 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-03 14:50:47.468  INFO 19316 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-03 14:50:48.474  INFO 19316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-03 14:50:48.480  INFO 19316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-03 14:50:48.480  INFO 19316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-03 14:50:48.546  INFO 19316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-03 14:50:48.546  INFO 19316 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1028 ms
+2022-07-03 14:50:49.119  INFO 19316 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-03 14:50:49.180  INFO 19316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-03 14:50:49.339  INFO 19316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-03 14:50:49.341  INFO 19316 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-03 14:50:49.345  INFO 19316 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-03 14:50:49.362  INFO 19316 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-03 14:50:49.476  INFO 19316 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.339 seconds (JVM running for 2.924)
+2022-07-03 14:51:13.874  INFO 19316 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-03 14:51:13.875  INFO 19316 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-03 14:51:13.879  INFO 19316 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-03 14:51:39.053  INFO 15964 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 15964 (D:\javaproject\mallserver\target\classes started by Arthur in D:\javaproject\mallserver)
+2022-07-03 14:51:39.057 DEBUG 15964 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-03 14:51:39.057  INFO 15964 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-03 14:51:40.206  INFO 15964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-03 14:51:40.215  INFO 15964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-03 14:51:40.216  INFO 15964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-03 14:51:40.296  INFO 15964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-03 14:51:40.296  INFO 15964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1175 ms
+2022-07-03 14:51:41.011  INFO 15964 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-03 14:51:41.084  INFO 15964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-03 14:51:41.278  INFO 15964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-03 14:51:41.280  INFO 15964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-03 14:51:41.284  INFO 15964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-03 14:51:41.311  INFO 15964 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-03 14:51:41.390  INFO 15964 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-03 14:51:41.390  INFO 15964 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-03 14:51:41.400  INFO 15964 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2022-07-03 14:51:41.495  INFO 15964 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.813 seconds (JVM running for 3.763)
+2022-07-03 14:51:57.454  INFO 15964 --- [http-nio-9002-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-03 14:51:57.592  INFO 15964 --- [http-nio-9002-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-03 14:51:57.597 DEBUG 15964 --- [http-nio-9002-exec-3] c.t.m.mapper.ItemMapper.selectOne        : ==>  Preparing: SELECT id,category_id,name,price,image,item_desc FROM item WHERE (id = ?) 
+2022-07-03 14:51:57.614 DEBUG 15964 --- [http-nio-9002-exec-3] c.t.m.mapper.ItemMapper.selectOne        : ==> Parameters: 2(Integer)
+2022-07-03 14:51:57.633 DEBUG 15964 --- [http-nio-9002-exec-3] c.t.m.mapper.ItemMapper.selectOne        : <==      Total: 1
+2022-07-03 15:05:56.726  INFO 15964 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-03 15:05:56.728  INFO 15964 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-03 15:05:56.733  INFO 15964 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
