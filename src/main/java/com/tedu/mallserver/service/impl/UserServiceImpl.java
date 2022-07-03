@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.tedu.mallserver.mapper.UserMapper;
 import com.tedu.mallserver.pojo.UserDAO;
 import com.tedu.mallserver.pojo.UserDTO;
+import com.tedu.mallserver.pojo.UserPasswordDTO;
 import com.tedu.mallserver.pojo.UserVO;
 import com.tedu.mallserver.service.UserService;
 import org.apache.catalina.User;
@@ -16,6 +17,19 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     UserMapper userMapper;
+
+
+    @Override
+    public boolean changePassword(UserPasswordDTO userPasswordDTO) {
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("id",userPasswordDTO.getId());
+        queryWrapper.eq("password",userPasswordDTO.getOldPassword());
+
+        UserDAO userDAO = new UserDAO();
+        userDAO.setPassword(userPasswordDTO.getNewPassword());
+        int updateRow = userMapper.update(userDAO,queryWrapper);
+        return updateRow >= 1;
+    }
 
     @Override
     public Integer login(UserDTO userDTO) {
