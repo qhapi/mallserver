@@ -1,27 +1,11 @@
 package com.tedu.mallserver.pojo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import io.swagger.models.auth.In;
-
-@TableName("item")
-public class ItemDAO {
-    @TableId(type = IdType.AUTO)
-    Integer id;
+public class ItemInsertDTO {
     Integer categoryId;
     String name;
     Integer price;
     String image;
     String itemDesc;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public Integer getCategoryId() {
         return categoryId;

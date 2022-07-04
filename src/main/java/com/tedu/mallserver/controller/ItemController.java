@@ -1,6 +1,7 @@
 package com.tedu.mallserver.controller;
 
 import com.tedu.mallserver.pojo.ItemDAO;
+import com.tedu.mallserver.pojo.ItemInsertDTO;
 import com.tedu.mallserver.pojo.ServerResult;
 import com.tedu.mallserver.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,15 @@ public class ItemController {
         ItemDAO itemDAO = itemService.selectById(Id);
         ServerResult serverResult = new ServerResult(0, "success", itemDAO);
         return serverResult;
+    }
+
+    @RequestMapping("/item/insert")
+    public ServerResult insert(ItemInsertDTO itemInsertDTO){
+        boolean isSuccess = itemService.insert(itemInsertDTO);
+        if(isSuccess){
+            return new ServerResult(0,"success",null);
+        }
+        else return  new ServerResult(0,"false",null);
     }
 
 }
