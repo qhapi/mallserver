@@ -49,4 +49,10 @@ public class UserController {
             return serverResult;
         }
     }
+
+    @RequestMapping("/user/register")
+    public ServerResult register(UserDTO userDTO){
+        Integer userId = userService.register(userDTO);
+        return new ServerResult(0,"success",userId);
+    }
 }
