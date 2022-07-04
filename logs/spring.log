@@ -287,3 +287,47 @@
 2022-07-03 17:59:55.733  INFO 15068 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2022-07-03 17:59:55.735  INFO 15068 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-07-03 17:59:55.741  INFO 15068 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-04 17:11:22.011  INFO 17596 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 17596 (D:\javaproject\mallserver\target\classes started by Arthur in D:\javaproject\mallserver)
+2022-07-04 17:11:22.013 DEBUG 17596 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-04 17:11:22.014  INFO 17596 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-04 17:11:23.013  INFO 17596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-04 17:11:23.021  INFO 17596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 17:11:23.022  INFO 17596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-04 17:11:23.095  INFO 17596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 17:11:23.095  INFO 17596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1035 ms
+2022-07-04 17:11:23.701  INFO 17596 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-04 17:11:23.757  INFO 17596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-04 17:11:23.910  INFO 17596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-04 17:11:23.911  INFO 17596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-04 17:11:23.913  INFO 17596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-04 17:11:23.930  INFO 17596 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-04 17:11:24.079  INFO 17596 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.477 seconds (JVM running for 3.149)
+2022-07-04 17:12:06.802  INFO 17596 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 17:12:06.802  INFO 17596 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 17:12:06.808  INFO 17596 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-04 17:13:44.538  INFO 17596 --- [http-nio-9002-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-04 17:13:44.697  INFO 17596 --- [http-nio-9002-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-04 17:13:44.704 DEBUG 17596 --- [http-nio-9002-exec-7] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ?) 
+2022-07-04 17:13:44.720 DEBUG 17596 --- [http-nio-9002-exec-7] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: 1(String)
+2022-07-04 17:13:44.741 DEBUG 17596 --- [http-nio-9002-exec-7] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 1
+2022-07-04 17:13:51.164 DEBUG 17596 --- [http-nio-9002-exec-3] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ?) 
+2022-07-04 17:13:51.164 DEBUG 17596 --- [http-nio-9002-exec-3] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: 12(String)
+2022-07-04 17:13:51.165 DEBUG 17596 --- [http-nio-9002-exec-3] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 0
+2022-07-04 17:13:51.168 DEBUG 17596 --- [http-nio-9002-exec-3] c.t.mallserver.mapper.UserMapper.insert  : ==>  Preparing: INSERT INTO user ( name, password ) VALUES ( ?, ? ) 
+2022-07-04 17:13:51.168 DEBUG 17596 --- [http-nio-9002-exec-3] c.t.mallserver.mapper.UserMapper.insert  : ==> Parameters: 12(String), 1(String)
+2022-07-04 17:13:51.182 DEBUG 17596 --- [http-nio-9002-exec-3] c.t.mallserver.mapper.UserMapper.insert  : <==    Updates: 1
+2022-07-04 17:13:51.185 DEBUG 17596 --- [http-nio-9002-exec-3] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ? AND password = ?) 
+2022-07-04 17:13:51.185 DEBUG 17596 --- [http-nio-9002-exec-3] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: 12(String), 1(String)
+2022-07-04 17:13:51.187 DEBUG 17596 --- [http-nio-9002-exec-3] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 1
+2022-07-04 17:23:47.363 DEBUG 17596 --- [http-nio-9002-exec-9] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ?) 
+2022-07-04 17:23:47.364 DEBUG 17596 --- [http-nio-9002-exec-9] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: q(String)
+2022-07-04 17:23:47.365 DEBUG 17596 --- [http-nio-9002-exec-9] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 0
+2022-07-04 17:23:47.366 DEBUG 17596 --- [http-nio-9002-exec-9] c.t.mallserver.mapper.UserMapper.insert  : ==>  Preparing: INSERT INTO user ( name, password ) VALUES ( ?, ? ) 
+2022-07-04 17:23:47.366 DEBUG 17596 --- [http-nio-9002-exec-9] c.t.mallserver.mapper.UserMapper.insert  : ==> Parameters: q(String), 1(String)
+2022-07-04 17:23:47.368 DEBUG 17596 --- [http-nio-9002-exec-9] c.t.mallserver.mapper.UserMapper.insert  : <==    Updates: 1
+2022-07-04 17:23:47.369 DEBUG 17596 --- [http-nio-9002-exec-9] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ? AND password = ?) 
+2022-07-04 17:23:47.370 DEBUG 17596 --- [http-nio-9002-exec-9] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: q(String), 1(String)
+2022-07-04 17:23:47.371 DEBUG 17596 --- [http-nio-9002-exec-9] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 1
+2022-07-04 17:24:14.401 DEBUG 17596 --- [http-nio-9002-exec-6] c.t.m.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,password,city,create_time FROM user WHERE (name = ?) 
+2022-07-04 17:24:14.401 DEBUG 17596 --- [http-nio-9002-exec-6] c.t.m.mapper.UserMapper.selectOne        : ==> Parameters: q(String)
+2022-07-04 17:24:14.403 DEBUG 17596 --- [http-nio-9002-exec-6] c.t.m.mapper.UserMapper.selectOne        : <==      Total: 1
