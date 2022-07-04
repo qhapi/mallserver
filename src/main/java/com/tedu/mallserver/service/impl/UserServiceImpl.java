@@ -58,4 +58,31 @@ public class UserServiceImpl implements UserService {
         userVO.setName(userDAO.getName());
         return userVO;
     }
+
+    @Override
+    public Integer register(UserDTO userDTO) {
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("name",userDTO.getName());
+
+        UserDAO userDAO = userMapper.selectOne(queryWrapper);
+        if(userDAO == null){
+            UserDAO insertUserDAO = new UserDAO();
+            insertUserDAO.setName(userDTO.getName());
+            insertUserDAO.setPassword(userDTO.getPassword());
+            int insertRow = userMapper.insert(insertUserDAO);
+
+            if(insertRow == 0){
+                throw new RuntimeException("保存数据失败");
+            }
+            else{
+                QueryWrapper selectQueryWrapper = new QueryWrapper();
+                selectQueryWrapper.eq("name",insertUserDAO.getName());
+                selectQueryWrapper.eq("password",insertUserDAO.getPassword());
+
+                UserDAO selectUserDAO = userMapper.selectOne(selectQueryWrapper);
+                return selectUserDAO.getId();
+            }
+        }
+        throw new RuntimeException("注册时用户名已存在");
+    }
 }

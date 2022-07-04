@@ -27,4 +27,11 @@ public interface UserService {
      * @return
      */
     public UserVO getUserInfo(Integer id);
+
+    /**
+     * 注册
+     * @param userDTO
+     * @return 用户编号
+     */
+    public Integer register(UserDTO userDTO);
 }
