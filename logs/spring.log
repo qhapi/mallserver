@@ -393,3 +393,35 @@ Consider defining a bean of type 'com.tedu.mallserver.mapper.StudentMapper' in y
 2022-07-06 15:09:02.810  INFO 3800 --- [http-nio-9002-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2022-07-06 15:09:02.816 DEBUG 3800 --- [http-nio-9002-exec-8] c.t.m.mapper.StudentMapper.selectOne     : ==>  Preparing: SELECT sno,spno,sname,username,password,phone_number,s_picture,sex,grade FROM student WHERE (sno = ? AND password = ?) 
 2022-07-06 15:09:02.833 DEBUG 3800 --- [http-nio-9002-exec-8] c.t.m.mapper.StudentMapper.selectOne     : ==> Parameters: 2019001(Integer), 123456(String)
+2022-07-06 15:09:58.513  INFO 6388 --- [main] c.tedu.mallserver.MallserverApplication  : Starting MallserverApplication on LAPTOP-OUK8U1QH with PID 6388 (D:\javaproject\shangshakews\target\classes started by Arthur in D:\javaproject\shangshakews)
+2022-07-06 15:09:58.515 DEBUG 6388 --- [main] c.tedu.mallserver.MallserverApplication  : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-07-06 15:09:58.515  INFO 6388 --- [main] c.tedu.mallserver.MallserverApplication  : No active profile set, falling back to default profiles: default
+2022-07-06 15:09:59.382  INFO 6388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-07-06 15:09:59.389  INFO 6388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 15:09:59.389  INFO 6388 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-06 15:09:59.449  INFO 6388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 15:09:59.449  INFO 6388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 895 ms
+2022-07-06 15:09:59.753  WARN 6388 --- [main] c.b.m.core.metadata.TableInfoHelper      : Warn: Could not find @TableId in Class: com.tedu.mallserver.pojo.StudentDAO.
+2022-07-06 15:09:59.987  INFO 6388 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-07-06 15:10:00.042  INFO 6388 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-06 15:10:00.177  INFO 6388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-07-06 15:10:00.178  INFO 6388 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2022-07-06 15:10:00.180  INFO 6388 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-06 15:10:00.197  INFO 6388 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-06 15:10:00.326  INFO 6388 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginUsingGET_1
+2022-07-06 15:10:00.327  INFO 6388 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginUsingHEAD_1
+2022-07-06 15:10:00.327  INFO 6388 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginUsingPOST_1
+2022-07-06 15:10:00.328  INFO 6388 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginUsingPUT_1
+2022-07-06 15:10:00.329  INFO 6388 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginUsingPATCH_1
+2022-07-06 15:10:00.330  INFO 6388 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginUsingDELETE_1
+2022-07-06 15:10:00.330  INFO 6388 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginUsingOPTIONS_1
+2022-07-06 15:10:00.331  INFO 6388 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginUsingTRACE_1
+2022-07-06 15:10:00.345  INFO 6388 --- [main] c.tedu.mallserver.MallserverApplication  : Started MallserverApplication in 2.094 seconds (JVM running for 2.581)
+2022-07-06 15:10:05.711  INFO 6388 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-06 15:10:05.711  INFO 6388 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-06 15:10:05.715  INFO 6388 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-06 15:10:05.777  INFO 6388 --- [http-nio-9002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-06 15:10:05.879  INFO 6388 --- [http-nio-9002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-06 15:10:05.885 DEBUG 6388 --- [http-nio-9002-exec-1] c.t.m.mapper.StudentMapper.selectOne     : ==>  Preparing: SELECT sno,spno,sname,username,password,phone_number,s_picture,sex,grade FROM student WHERE (sno = ? AND password = ?) 
+2022-07-06 15:10:05.908 DEBUG 6388 --- [http-nio-9002-exec-1] c.t.m.mapper.StudentMapper.selectOne     : ==> Parameters: 2019001(Integer), 123456(String)
+2022-07-06 15:10:05.923 DEBUG 6388 --- [http-nio-9002-exec-1] c.t.m.mapper.StudentMapper.selectOne     : <==      Total: 1
