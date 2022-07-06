@@ -186,8 +186,8 @@ CREATE TABLE `student` (
   `sname` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `phone_number` varchar(255) DEFAULT NULL,
-  `s_picture` varchar(255) DEFAULT NULL,
+  `phonenumber` varchar(255) DEFAULT NULL,
+  `spicture` varchar(255) DEFAULT NULL,
   `sex` varchar(255) DEFAULT NULL,
   `grade` varchar(255) NOT NULL,
   PRIMARY KEY (`sno`)
@@ -195,7 +195,7 @@ CREATE TABLE `student` (
 
 /*Data for the table `student` */
 
-insert  into `student`(`sno`,`spno`,`sname`,`username`,`password`,`phone_number`,`s_picture`,`sex`,`grade`) values (2019001,1,'张三','三德子','123456','19155556666','002.png','男','2019'),(2147483647,1,'李四','inters','123456','18355555555','001.png','男','2019');
+insert  into `student`(`sno`,`spno`,`sname`,`username`,`password`,`phonenumber`,`spicture`,`sex`,`grade`) values (2019001,1,'张三','三德子','123456','19155556666','002.png','男','2019'),(2147483647,1,'李四','inters','123456','18355555555','001.png','男','2019');
 
 /*Table structure for table `teacher` */
 
